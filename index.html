@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Google</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-    <nav>
+    <nav id="primary-nav">
         <ul>
             <li><a href="">About</a></li>
             <li><a href="">Store</a></li>
 
-            <li><a href="">Gmail</a></li>
-            <li><a href="">Images</a></li>
-            <li><button></button></li>
-            <li><img></li>
+            <div class="divide">                
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Images</a></li>
+                <li><div><span class="material-icons">&#xE5C3;</span></div></li>
+                <li><button>G</button></li>
+            </div>
         </ul>
     </nav>
 
     <form>
-        <input id="search-box" type="search" name="search" required>
-        <div id="buttons">
+        <img id="logo" src="googlelogo_color_272x92dp.png" alt="Colorful, titular Google logo">
+        
+        <div>            
+            <span class="material-icons">&#xE8B6;</span>
+            <input type="search" name="search" required>
+            <span class="material-icons">&#xE029;</span>
+        </div>
+        
+        <div>
             <button>Google Search</button>
             <button>I'm Feeling Lucky</button>
         </div>
@@ -28,14 +40,17 @@
 
     <footer>
         <p><img> Carbon neutral since 2007</p>
-        <nav>
+        <nav id="secondary-nav">
             <ul>
                 <li><a href="">Advertising</a></li>
                 <li><a href="">Business</a></li>
                 <li><a href="">How Search Works</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Settings</a></li>
+
+                <div class="divide">                    
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Settings</a></li>
+                </div>
             </ul>
         </nav>
     </footer>
