@@ -1,5 +1,5 @@
-/* 
-    http://meyerweb.com/eric/tools/css/reset/ 
+/*
+    http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 2011-01-26
     License: none (public domain)
 */
@@ -43,23 +43,7 @@
 
 	a {
 		text-decoration: none;
-	}
-
-	#primary-nav ul li a {
-		color: #222;
-	}
-
-	#secondary-nav ul li a {
-		color: #70757A
-	}
-
-	.material-icons {
-		color: #70757A;
-	}
-
-	.divide .material-icons {
-		font-size: 16px;
-		line-height: 16px;
+		color: black;
 	}
 
 /* Navigation */
@@ -68,19 +52,25 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		height: 50px;
 	}
 
-	#secondary-nav {
-		height: 50px;
-	}
-
-	.divide {
-		float: right;
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 10px 20px;
 	}
 
 	li {
-		display: inline-block;
+		padding: 5px;
+	}
+
+	.divide {
+		flex-grow: 3;
+	}
+
+	.material-icons {
+		color: #70757A;
 	}
 
 	li button {
@@ -92,44 +82,7 @@
 		height: 32px;
 	}
 
-	footer {
-		background-color: #EEE;
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-	}
-
-	footer p {
-		text-align: center;
-	}
-
-/* Positioning */
-
-	li {
-		padding: 0 5px 0 5px;
-		margin-top: 17px;
-		margin-bottom: 17px;
-	}
-
-	.divide li {
-		margin: 17px 0 17px 0;
-	}
-
-	.divide li:nth-of-type(3) {
-		margin: 15.5px 0 15.5px 0;
-	}
-
-	.divide li:last-of-type {
-		margin: 0 0 7px 0;
-	}
-
-	li:first-of-type {
-		margin-left: 15px;
-	}
-
-	.divide li:last-of-type {
-		margin-right: 15px;
-	}
+/* Search Form */
 
 	form {
 		position: relative;
@@ -157,15 +110,15 @@
 		margin: 20px;
 		border-radius: 24px;
 		border: #DDD solid 1px;
-		box-shadow: 0 -2px 3px #EEE, 
-					2px 0 3px #DDD, 
-					0 2px 3px #CCC, 
+		box-shadow: 0 -2px 3px #EEE,
+					2px 0 3px #DDD,
+					0 2px 3px #CCC,
 					-2px 0 3px #DDD;
 	}
 
 	#search-div .material-icons {
 		position: relative;
-		top: 30px;
+		top: 32px;
 	}
 
 	#search-icon {
@@ -184,4 +137,27 @@
 		border-radius: 3px;
 		padding: 10px 15px;
 		line-height: 2;
+	}
+
+/* Footer */
+
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background-color: #EEE;
+	}
+
+	footer div,
+	footer a {
+		color: #70757A;
+	}
+
+	footer div {
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.fa-leaf {
+		color: green;
 	}
